@@ -1,0 +1,1 @@
+insert into 'person' Values (1,'Tawkir','Ahmed','tawkir.ahmed@gmail.com','2019-05-01 09:23:00'), (2, 'khan', 'riad', 'khr.1380@gmail.com', '2019-05-01 09:25:00');
