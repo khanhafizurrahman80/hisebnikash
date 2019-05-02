@@ -22,4 +22,8 @@ public class PersonService {
         .forEach(persons::add);
         return persons;
     }
+
+    public void addPerson(Person person){
+        personRepository.save(person);
+    }
 }
