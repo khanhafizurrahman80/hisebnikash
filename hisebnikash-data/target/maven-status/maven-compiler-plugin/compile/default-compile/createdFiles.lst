@@ -1,0 +1,4 @@
+DatasourceConfig.class
+com/learning/hisebnikash/data/repositories/PersonRepository.class
+com/learning/hisebnikash/data/domain/Person.class
+com/learning/hisebnikash/data/service/PersonService.class
