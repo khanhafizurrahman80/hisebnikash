@@ -20,6 +20,7 @@ services:
     ports:
     - 8080:8080
     depends_on:
+
       - docker-mysql
     links:
       - docker-mysql:mysql
@@ -29,6 +30,7 @@ services:
 networks:
   my_mysql_net:
     driver: bridge
+
 
 
 
