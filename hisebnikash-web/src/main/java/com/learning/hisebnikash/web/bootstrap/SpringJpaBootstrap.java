@@ -7,12 +7,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
+import org.springframework.stereotype.Component;
 
 import static java.time.LocalDate.now;
 
 /**
  * Created by khanhafizurrahman on 2/5/19.
  */
+@Component
 public class SpringJpaBootstrap implements ApplicationListener<ContextRefreshedEvent> {
     private Logger log = LoggerFactory.getLogger(SpringJpaBootstrap.class);
 
