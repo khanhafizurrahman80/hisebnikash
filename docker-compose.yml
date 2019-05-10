@@ -26,10 +26,6 @@ services:
     networks:
       - my_mysql_net
 
-    environment:
-      - MYSQL_HOST=docker-mysql
-
-
 networks:
   my_mysql_net:
     driver: bridge
