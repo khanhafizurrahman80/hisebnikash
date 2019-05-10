@@ -3,12 +3,22 @@ version: '3'
 services:
 
   mysql-dev:
-    image: mysql:latest
+    image: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: 12345678
-      MYSQL_DATABASE: hisebnikashdb
+      MYSQL_ROOT_PASSWORD: 12345671
     ports:
     - "3306:3306"
-    
+#    restart: always
+#
+  springboot-docker-compose-hisebnikash-container:
+    image: springboot-docker-compose-hisebnikash-app:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+    - "8081:8080"
+    depends_on:
+      - mysql-dev
+
 
 

@@ -30,10 +30,4 @@ public class PersonController {
     public void saveProduct(Person person){
         personService.addPerson(person);
     }
-
-
-
-
-
-
 }
